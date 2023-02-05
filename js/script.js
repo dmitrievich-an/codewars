@@ -155,20 +155,21 @@
 // SOLUTION:
 // const findNeedle = (haystack) => `found the needle at position ${haystack.indexOf('needle')}`
 
-// TODO: A Needle in the Haystack
+// TODO: Get the Middle Character
 // DESCRIPTION:
-// Can you find the needle in the haystack?
+// You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
 //
-// Write a function findNeedle() that takes an array full of junk but containing one "needle"
-//
-// After your function finds the needle it should return a message (as a string) that says:
-//
-// "found the needle at position " plus the index it found the needle, so:
-//
-// Example(Input --> Output)
-//
-// ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5"
-// Note: In COBOL, it should return "found the needle at position 6"
+// Examples:
+// Kata.getMiddle("test") should return "es"
+// Kata.getMiddle("testing") should return "t"
+// Kata.getMiddle("middle") should return "dd"
+// Kata.getMiddle("A") should return "A"
 //
 // SOLUTION:
-// const findNeedle = (haystack) => `found the needle at position ${haystack.indexOf('needle')}`
+// function getMiddle(s) {
+//   const arrayString = s.split("");
+//   const odd = arrayString.length % 2;
+//   return odd
+//     ? arrayString[(arrayString.length - 1) / 2]
+//     : arrayString[arrayString.length / 2 - 1] + arrayString[arrayString.length / 2]
+// }
