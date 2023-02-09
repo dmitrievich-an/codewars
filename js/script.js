@@ -173,3 +173,20 @@
 //     ? arrayString[(arrayString.length - 1) / 2]
 //     : arrayString[arrayString.length / 2 - 1] + arrayString[arrayString.length / 2]
 // }
+
+// TODO: Reverse words
+// DESCRIPTION:
+// Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+//
+// Examples:
+// "This is an example!" ==> "sihT si na !elpmaxe"
+// "double  spaces"      ==> "elbuod  secaps"
+//
+// SOLUTION:
+// function reverseWords(str) {
+//   const arrayStr = str.split(" ")
+//   for (let i = 0; i < arrayStr.length; i++) {
+//     arrayStr[i] = arrayStr[i].split("").reverse().join("")
+//   }
+//   return arrayStr.join(" ")
+// }
